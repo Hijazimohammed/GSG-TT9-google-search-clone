@@ -12,6 +12,9 @@
 body {
   background-color: var(--dark);
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 h1 {
   color: var(--white);
@@ -85,7 +88,7 @@ main section article {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 main section article h1 {
   text-align: center;
@@ -187,4 +190,26 @@ footer .footer-menu {
 }
 .footer-menu ul:last-child {
   justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+  main section article h1 {
+    font-size: 5rem;
+  }
+  .buttons button {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-menu {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-menu ul:last-child {
+    justify-content: center;
+  }
 }
