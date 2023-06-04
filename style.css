@@ -13,6 +13,9 @@ body {
   background-color: var(--dark);
   font-size: 16px;
 }
+h1 {
+  color: var(--white);
+}
 h3 {
   color: var(--gray);
 }
@@ -64,6 +67,96 @@ header nav ul li:nth-child(3) {
   height: 30px;
 }
 
+/*mian*/
+main {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+section {
+  width: 50%;
+}
+main section article {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+main section article h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+form {
+  width: 100%;
+}
+.search-input {
+  position: relative;
+  width: 100%;
+}
+.search-input input {
+  width: 100%;
+  height: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  outline: none;
+  background-color: var(--dark);
+  border: 1px solid gray;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  color: white;
+}
+.serach-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30%;
+  left: 1rem;
+}
+.images {
+  position: absolute;
+  display: flex;
+  right: 1rem;
+  top: 30%;
+}
+.images img {
+  margin-left: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.buttons button {
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: #303135;
+  color: var(--white);
+  border: none;
+}
+.buttons button:hover {
+  border: 1px solid gray;
+}
+p {
+  color: var(--gray);
+  text-align: center;
+}
+p span {
+  color: #5a739b;
+}
 /*footer*/
 
 footer {
