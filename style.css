@@ -191,7 +191,6 @@ footer .footer-menu {
 .footer-menu ul:last-child {
   justify-content: flex-end;
 }
-
 @media (max-width: 576px) {
   main section article h1 {
     font-size: 5rem;
